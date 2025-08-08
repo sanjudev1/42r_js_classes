@@ -3,7 +3,6 @@ document.getElementById("container").style.fontSize="5px"
 let randomNumber =Math.random()*100
 randomNumber=Math.ceil(randomNumber)
 function Guessthenumber(){
-    console.log("function is triggered...")
 
     let currentValue=document.getElementById("user_input").value
    
