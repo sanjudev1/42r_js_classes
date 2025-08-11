@@ -1,0 +1,20 @@
+html,body{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+#name{
+    padding: 7px 24px;
+    margin-bottom: 7px;
+}
+#password{
+     padding: 7px 24px;
+    margin-bottom: 7px;
+}
+#submit{
+    width: 115px;
+    height: 45px;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+}
