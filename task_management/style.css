@@ -1,0 +1,16 @@
+html,body{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+#input{
+    padding: 7px 24px;
+}
+.addbtn{
+    padding: 8px;
+    background-color: blue;
+    color: aliceblue;
+    cursor: pointer;
+    border: solid 1px blue;
+    border-radius: 3px;
+    font-size: 16px;
+}

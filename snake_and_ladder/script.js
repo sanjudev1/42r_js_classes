@@ -22,13 +22,25 @@ for(let i=100;i>=1;i--){
    
 
 }
-
+let count=0
 for(let i=0;i<=3;i++){
     let btn=document.createElement("button")
     btn.textContent=players[i].name +" "+ players[i].score
     btn.style.backgroundColor=players[i].color
     btn.classList="btn"
+    btn.id=`btn${i}`
+    if(count!=i){
+
+        btn.disabled=true
+    }
     btn.onclick=function(){
+        btn.disabled=true
+        count+=1
+        if(count==4){
+            count=0
+        }
+       let current_btn=document.getElementById(`btn${count}`)
+        current_btn.disabled=false
         let randomNumber=Math.random()*6
         randomNumber=Math.ceil(randomNumber)
         let current_person =document.getElementById(`person${players[i].score}`) 
