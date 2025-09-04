@@ -1,0 +1,28 @@
+#userdata{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    color: black;
+    border: solid 1px blue;
+    margin: 2px;
+    padding: 5px;
+}
+html,body{
+    text-align: center;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    
+    justify-content: center;
+    text-align: center;
+    margin-left: 35%;
+}
+.input{
+    padding: 7px;
+    border-radius: 2px;
+}

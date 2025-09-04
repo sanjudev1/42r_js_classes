@@ -1,3 +1,9 @@
+let counter_ele=document.getElementById("counter")
+let persist_value =localStorage.getItem("count")
+if(persist_value){
+
+    counter_ele.textContent=persist_value
+}
 
 document.getElementById("heading").style.color="#1976D2"
 function Increment(){
@@ -11,6 +17,7 @@ function Increment(){
 
 
    let count=document.getElementById("counter").textContent=currentValue+1
+   localStorage.setItem("count", count)
    count=parseInt(count)
    if(count>0){
     document.getElementById("counter").style.color="blue"
@@ -26,6 +33,7 @@ function Decrement(){
     let currentValue=document.getElementById("counter").textContent
     currentValue=parseInt(currentValue)
     let count =document.getElementById("counter").textContent=currentValue-1
+    localStorage.setItem("count", count)
     count=parseInt(count)
    if(count>0){
     document.getElementById("counter").style.color="blue"
@@ -41,5 +49,6 @@ function Decrement(){
 
 function Reset(){
     document.getElementById("counter").textContent=0
+    localStorage.setItem("count", "0")
     document.getElementById("counter").style.color="black"
 }
